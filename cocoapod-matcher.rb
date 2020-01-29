@@ -1,10 +1,12 @@
 class CocoapodMatcher < Formula
   desc "A Homebrew package to write missing CocoaPod versions to the Podfile from the Podfile.lock"
   homepage ""
-  url "https://github.com/mapierce/CocoaPod-Matcher/archive/0.0.2.tar.gz"
-  sha256 "2584e8ef800ad6baf19eecb95003aadc36ae30213ffc48bdf85fbbb2f92047ce"
+  url "https://github.com/mapierce/CocoaPod-Matcher/archive/0.0.3.tar.gz"
+  sha256 "bd05ace0fd002e92e5d20b2c375a99773ad6c006c16265ab802acffd9b0ddef8"
+
+  # depends_on "cmake" => :build
 
   def install
-    bin.install "cocoapod-matcher"
+    bin.install "pod-matcher"
   end
 end
